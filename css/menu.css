@@ -1,0 +1,226 @@
+/*
+------------------- MENU PRINCIPAL DESKTOP -------------------
+*/
+.navegacao { /* container geral */
+	background: #31a548;
+	border-bottom: solid 1px transparent;
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	height: 64px;
+	letter-spacing: normal;
+	line-height: 2rem;
+	margin: 0 auto;
+	max-height: 64px;
+	max-width: 2000px;
+	position: relative;
+	text-shadow: 0.5px 0.866px 2px rgba(35, 31, 32, 0.063);
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 200 !important;
+}
+.navegacao ul { /* container centralizado */
+	display: flex;
+	flex-wrap: wrap;
+	float: none;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	padding-top: 4px;
+	position: relative;
+	-webkit-margin-before: 0px;-webkit-margin-after: 0px;-webkit-margin-start: auto;-webkit-margin-end: auto;-webkit-padding-start: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+}
+.navegacao ul li { /* item */
+	display: inline-block;
+	position: relative;
+}
+.navegacao ul li a { /* menu link */
+	color: #ffffff;
+	display: block;
+	margin: 0;
+	padding: 19px 12px;
+	position: relative;
+	text-decoration: none;
+}
+.navegacao ul li:first-child a { /* retirando margem esquerda primeiro item */
+	margin-left: 0 !important;
+}
+.navegacao ul li:last-child a { /* retirando margem direita ultimo item */
+	margin-right: 0 !important;
+}
+.navegacao ul li a:hover,  /* menu link hover */
+.navegacao ul li a:focus { /* menu link focus */
+	color: #FFAE1A;
+}
+
+/*
+-------------- MENU PRINCIPAL DESKTOP TRANSICAO SCROLL -------------
+*/
+.navegacao-fixa {
+	background: rgba(49,165,72,0.85);
+	font-size: 1.8rem;
+	height: 34px;
+	left: 0;
+	position: fixed;
+	top: 54px;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	width: 100%;
+}
+.navegacao-fixa ul li a {
+	padding: 3px 12px;
+}
+/*
+--------------- MENU MOBILE RESET DO MODAL BOOTSTRAP ---------------
+*/
+.menu-mobile-open{overflow: hidden;}.menu-mobile {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;display: none;overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;}.menu-mobile.fade-menu-mobile.menu-mobile-dialog{-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0, -25%);-ms-transform: translate(0, -25%);-o-transform: translate(0, -25%);transform: translate(0, -25%);}.menu-mobile.in.menu-mobile-dialog{-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);-o-transform: translate(0, 0);transform: translate(0, 0);}.menu-mobile-open .menu-mobile{overflow-x: hidden;overflow-y: auto;}.menu-mobile-dialog{position: relative;width: auto;margin: 0;}.menu-mobile-content {position: relative;background-color: transparent;-webkit-background-clip: padding-box;background-clip: padding-box;border: none;border: none;outline: 0;-webkit-box-shadow: none;box-shadow: none;}.modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;background-color: #f8f8f8;}.menu-mobile-body,.menu-mobile-body .menu-movel,.menu-mobile-header,.menu-mobile-title{position:relative;z-index:1000}.modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}.modal-backdrop.in{filter:alpha(opacity=50);opacity:.99}.menu-mobile-header{border-bottom:none;padding:20px;text-align:right}.modal-header .fechar{margin-top:-2px}.menu-mobile-title{line-height:1.42857143;margin:0}.menu-mobile-body{padding:0}.menu-mobile-footer{display:none;visibility:hidden}@media (min-width:768px){.menu-mobile-dialog{width:600px;margin:0}.menu-mobile-content{-webkit-box-shadow:none;box-shadow:none}.menu-mobile-sm{width:300px}}@media (min-width:992px){.menu-mobile-lg{width:900px}}
+
+/*
+----------------- MENU AJUSTES DE MEDIA QUERIES ----------------
+*/
+
+
+/*
+------------------------- MENU MOBILE --------------------------
+*/
+@media screen and (max-width: 767px) and (min-width: 176px) {
+#nav-mobile {
+	height: 40px;
+	margin-right: .5rem;
+	margin-top: 1.44rem;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	z-index: 52;
+}
+#nav-mobile {
+	position: fixed;
+	z-index: 60;
+}
+.logo-mobile-menu {
+	margin-top: 0.7857em;
+	max-width: 179px;
+}
+/* botao fechar (menu) */
+.fechar {
+	max-width: 40px;
+	position: absolute;
+	right: .5em;
+	top: 0px;
+	width: 13%;
+}
+.fechar img {
+	margin-right: .5em;
+	margin-top: 1.44rem;
+	width: 100%;
+}
+/* menu movel */
+.menu-movel {
+	list-style: none;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	padding-left: 0px;
+	text-align: center;
+}
+.menu-movel li a {
+	color: #003367;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.3rem;
+	display: block;
+	letter-spacing: -.02rem;
+	line-height: 4rem;
+	margin-top: .2rem;
+	padding: .01rem 1rem;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.11);
+	vertical-align: middle;
+}
+.menu-movel li a:hover {
+	background: #31a548;
+	color: #ffffff;
+	text-decoration: none;
+}
+}
+
+/*
+-------------- RESET MODAL BOOTSTRAP NO MENU MOBILE ATIVO --------------
+*/
+.menu-mobile{padding-left: 0 !important;padding-right: 0 !important;}
+
+/*
+---------------------- MARCACAO DE PAGINA NO MENU ----------------------
+*/
+/*
+------------------------- pagina institucional -------------------------
+*/
+.pg-institucional .navegacao ul li .menu-institucional {
+	color: #FFAE1A;
+}
+.pg-institucional .menu-movel li .menu-institucional {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+--------------------------- pagina simulado ----------------------------
+*/
+.pg-simulado .navegacao ul li .menu-simulado {
+	color: #FFAE1A;
+}
+.pg-simulado .menu-movel li .menu-simulado {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+--------------------------- pagina noticias ----------------------------
+*/
+.pg-noticias .navegacao ul li .menu-noticias {
+	color: #FFAE1A;
+}
+.pg-noticias .menu-movel li .menu-noticias {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+--------------------------- pagina artigos -----------------------------
+*/
+.pg-artigos .navegacao ul li .menu-artigos {
+	color: #FFAE1A;
+}
+.pg-artigos .menu-movel li .menu-artigos {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+--------------------------- pagina downloads ---------------------------
+*/
+.pg-downloads .navegacao ul li .menu-downloads {
+	color: #FFAE1A;
+}
+.pg-downloads .menu-movel li .menu-downloads {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina fale conosco --------------------------
+*/
+.pg-fale .navegacao ul li .menu-fale {
+	color: #FFAE1A;
+}
+.pg-fale .menu-movel li .menu-fale {
+	background: #31a548;
+	color: #ffffff;
+	pointer-events: none;
+}
